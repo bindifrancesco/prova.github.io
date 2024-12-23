@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Agriturismo Terracciano</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar-->
+        <header>
+            <h1 class="titolo">Welcome to Terracciano</h1>
+            <nav>
+                <ul class="about">
+                  <li><a>About</a></li>
+                  <li><a>Restaurant</a></li>
+                  <li><a>Hotel</a></li>
+                  <li><a>Spa</a></li>
+                  <li><a>Regolamentazione</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Layout principale-->
+        <main>
+            <div class="content">
+                <article class="photo-container">
+                    <img src="../zfoto/terracciano.jpg" alt="Foto 1">
+                </article>
+                <article class="photo-container">
+                    <img src="../zfoto/terracciano2.jpg" alt="Foto 2">
+                </article>
+            </div>
+            <section> <!--continuare css sidebar-->
+                <h2>Dicono di noi</h2>
+                <div class="reviews">
+                    <div class="review">
+                        <p class="user">Utente 1:</p>
+                        <p class="comment">Ottima foto! Atmosfera davvero suggestiva.</p>
+                    </div>
+                    <div class="review">
+                        <p class="user">Utente 2:</p>
+                        <p class="comment">Mi piace molto il gioco di colori, fantastica composizione.</p>
+                    </div>
+                    <div class="review">
+                        <p class="user">Utente 3:</p>
+                        <p class="comment">Un’immagine davvero affascinante, mi ha colpito subito.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul class="footer-class">
+                <li>Mail: hege@example.com</li>
+                <li>Tel: 056 3456789</li>
+                <li>Author: Quantum</li>
+            </ul>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+<!-- Idee
+
+######################################################################################################################################
+Navbar
+******************************************************************************************************************************
+
+
+
+
+
+
+######################################################################################################################################
+Main Layout
+******************************************************************************************************************************
+<main>
+    <div class="background-image">
+        <img src="../zfoto/terracciano.jpg"/>
+    </div>
+    <div class="background-image2">
+        <img src="../zfoto/terracciano2.jpg"/>
+    </div>
+</main>
+
+
+
+
+********************************************************************************************************************************
+<main>
+    <div class="content">
+        <article class="photo-container">
+            <img src="../zfoto/terracciano.jpg" alt="Foto 1">
+        </article>
+        <article class="photo-container">
+            <img src="../zfoto/terracciano2.jpg" alt="Foto 2">
+        </article>
+    </div>
+
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding-top: 120px;  /* Inizia dopo l'header fisso */
+  height: calc(100vh - 20px); /* Rimuove l'altezza dell'header dal viewport */
+  overflow: hidden;  /* Impedisce lo scrolling orizzontale */
+}
+
+.content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 0px;
+}
+
+.photo-container {
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-container article {
+  margin: 0;  /* Rimuove il margine tra gli articoli */
+  padding: 0;
+}
+
+.photo-container img {
+  width: 100%;
+  height: max-content;
+  object-fit: cover;
+  display: block;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+
+
+
+
+
+-->

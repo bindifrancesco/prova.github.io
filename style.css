@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;  
+}
+
+/*NAVBAR*/
+header{
+  position: fixed;  
+  top: 0;  
+  width: 100%;  
+  z-index: 1000;  
+  background-color: rgba(139, 69, 19, 0.9);  
+  padding: 10px 0;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+}
+
+.titolo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  text-align: center;
+  margin: 10px 0;
+}
+
+.about {
+  display: flex;     
+  justify-content: center;  
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+li {
+  color:black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0px 30px;     
+}      
+
+
+/* Layout principale */
+main {
+  display: flex;
+  flex-direction: row;
+  padding-top: 120px;  /* Inizia dopo l'header fisso */
+  height: calc(100vh - 20px); /* Rimuove l'altezza dell'header dal viewport */
+  overflow: hidden;  /* Impedisce lo scrolling orizzontale */
+}
+
+.content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 0px;
+}
+
+.photo-container {
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-container article {
+  margin: 0;  /* Rimuove il margine tra gli articoli */
+  padding: 0;
+}
+
+.photo-container img {
+  width: 100%;
+  height: max-content;
+  object-fit: cover;
+  display: block;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+
+
+
+
+
+
+.sidebar {
+  width: 30%;
+  background-color: #cc3434;
+  height: 100%; /* Altezza che occupa tutta la finestra */
+  overflow-y: auto;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;  /* Rende la sidebar "fissa" sotto l'header */
+  padding-top: 20px;  /* Spazio sopra il contenuto della sidebar */
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: rgba(139, 69, 19, 0.9); 
+  height: 20px;  /* Altezza del footer */
+  width: 100%;
+  position: fixed; 
+  bottom: 0;
+  left: 0; /* Allinea il footer a sinistra */
+  
+  /* Usando flexbox per centrare il contenuto */
+  display: flex;
+  justify-content: center;  /* Centra orizzontalmente */
+  align-items: center;  /* Centra verticalmente */
+  text-align: center;  /* Assicura che il testo all'interno sia centrato */
+}
+
+.footer-class {
+  display: flex;
+  justify-content: center;  /* Centra gli elementi all'interno della classe */
+}
+
+.footer-class li {
+  display: inline-block;
+  margin: 0px 20px; 
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;  
+}
+
+header1 {   
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: center;  
+  text-align: center;
+  border: 1px solid blue;  
+  margin: 0 auto;  
+  background-color: brown;
+}
+
+header{
+  position: fixed;  
+  top: 0;  
+  width: 100%;  
+  z-index: 1000;  
+  background-color: rgba(139, 69, 19, 0.9);  
+  padding: 10px 0;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+}
+.titolo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; 
+  text-align: center;
+  border: 1px solid red;
+  margin: 10px 0;
+}
+
+  .about {
+  display: flex;     
+  justify-content: center;  
+  padding: 0;
+  list-style: none;  
+  margin: 0;
+  margin-bottom: 10px;
+   
+}
+
+li {
+  color:black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0px 30px;  
+   
+   
+}
+
+.background-image img{
+  display: block;
+  max-width: 100%;
+   
+  height: auto;  
+  margin: 0;  
+}
+
+.background-image2 img{
+  display: block;
+  max-width: 100%;
+   
+  height: auto;  
+  margin: 0;  
+}
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+} */
